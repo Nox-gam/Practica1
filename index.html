@@ -16,19 +16,23 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form action="confirmacion.html" method="POST">
+                <form action="confirmacion.html" method="POST" enctype="text/plain">
                     <h1>Registra tu Usuario</h1>
                     <div class="form-group">
                         <label for="">Nombres:</label>
                         <input type="text" name="Nombres" id="" class="form-control">
                     </div>
-                    <div class="form-group">
-                        <label for="">Apellido Paterno:</label>
-                        <input type="text" name="ApellidoP" id="" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Apellido Materno:</label>
-                        <input type="text" name="ApellidoM" id="" class="form-control">
+                    <div class="form-group ">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="">Apellido Paterno:</label>
+                                <input type="text" name="ApellidoP" id="" class="form-control">
+                            </div>
+                            <div class="col-sm-6 ">
+                                <label for="">Apellido Materno:</label>
+                                <input type="text" name="ApellidoM" id="" class="form-control">
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="">Sexo:</label>
@@ -44,7 +48,8 @@
                     </div>
                     <div class="form-group">
                         <label for="">Teléfono:</label>
-                        <input type="text" name="tel" value="" maxlength="9" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">  
+                        <input type="text" name="tel" value="" maxlength="9"
+                            onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
                     </div>
                     <div class="form-group">
                         <label for="">Distrito:</label>
@@ -74,6 +79,9 @@
                     <div class="form-group">
                         <button class="btn btn-success">Registrar Usuario</button>
                     </div>
+                    <div class="spinner-grow text-primary" role="status">
+                        <span class="sr-only"><p class="text-primary">datos han sido guardados satisfactoriamente y en breve le enviaremos un correo para establecer una nueva contraseña</p></span>
+                      </div>
                 </form>
             </div>
         </div>

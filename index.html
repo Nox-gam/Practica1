@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="confirmacion.html" method="POST">
+                    <h1>Registra tu Usuario</h1>
+                    <div class="form-group">
+                        <label for="">Nombres:</label>
+                        <input type="text" name="Nombres" id="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Apellido Paterno:</label>
+                        <input type="text" name="ApellidoP" id="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Apellido Materno:</label>
+                        <input type="text" name="ApellidoM" id="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Sexo:</label>
+                        <select name="genero">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="no_especificar">no especificar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Correo Electronico:</label>
+                        <input type="email" name="email" id="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Teléfono:</label>
+                        <input type="text" name="tel" value="" maxlength="9" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">  
+                    </div>
+                    <div class="form-group">
+                        <label for="">Distrito:</label>
+                        <select name="genero">
+                            <option value="DA">Distrito A</option>
+                            <option value="DB">Distrito B</option>
+                            <option value="DC">Distrito C</option>
+                            <option value="DD">Distrito D</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Dirección:</label>
+                        <input type="text" name="direccion" id="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nombre de la Mascota:</label>
+                        <input type="text" name="mascota" id="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Tipo de Mascota:</label>
+                        <select name="genero">
+                            <option value="perro">perro</option>
+                            <option value="gato">gato</option>
+                            <option value="hamster">hamster</option>
+                        </select>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
